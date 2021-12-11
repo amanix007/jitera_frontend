@@ -1,42 +1,42 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TeamMember-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+  .TeamMember {
+    flex: 0 0 calc(25% - 20px);
+    margin: 20px 10px;
+    max-width: calc(50% - 20px);
+    @media (max-width: 768px) {
+      flex: 0 0 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    h3 {
+      margin-bottom: 8px;
+    }
+    ul.details {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+        span.anticon {
+          margin-right: 8px;
+          svg {
+          }
+        }
+      }
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.ant-card-actions,
+.ant-card-cover {
+  background-color: #f5f5f5;
 }
