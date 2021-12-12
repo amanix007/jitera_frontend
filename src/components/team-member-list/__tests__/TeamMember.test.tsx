@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import 'jest-extended'
 import "@testing-library/jest-dom/extend-expect";
 import { cleanup, fireEvent, render } from '@testing-library/react';
-import TeamMember from '../TeamMember';
 import { screen } from '@testing-library/dom'
+import TeamMember from '../TeamMember';
 
 // Note: running cleanup afterEach is done automatically for you in @testing-library/react@9.0.0 or higher
 // unmount and cleanup DOM after the test is finished.
+
+
 afterEach(cleanup);
 describe('TeamMember', () => {
 

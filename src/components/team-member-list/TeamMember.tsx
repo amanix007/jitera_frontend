@@ -2,7 +2,8 @@ import React, { ReactElement } from 'react'
 import { Skeleton, Switch, Card, Avatar } from 'antd';
 import { EditOutlined, DeleteOutlined, EllipsisOutlined, HeartOutlined, SettingOutlined, MailOutlined, PhoneOutlined, GlobalOutlined } from '@ant-design/icons';
 import Meta from 'antd/lib/card/Meta';
-import { TeamMemberInterface } from './App';
+import { TeamMemberInterface } from '../../helpers/Interfaces';
+
 
 interface Props {
     loading: boolean;
